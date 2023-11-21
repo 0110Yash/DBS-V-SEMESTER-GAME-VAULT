@@ -37,5 +37,12 @@ namespace WindowsFormsApp5
             F12.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form f2 = new Form2();
+            f2.Show();
+            this.Hide();
+        }
     }
 }

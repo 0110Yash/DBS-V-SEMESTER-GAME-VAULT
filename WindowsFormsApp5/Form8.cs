@@ -26,5 +26,12 @@ namespace WindowsFormsApp5
             da.Fill(ds, "game");
             dataGridView1.DataSource = ds.Tables["game"].DefaultView;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form f2 = new Form2();
+            f2.Show();
+            this.Hide();
+        }
     }
 }

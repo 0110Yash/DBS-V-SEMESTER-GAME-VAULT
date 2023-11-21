@@ -13,22 +13,16 @@ namespace WindowsFormsApp5
     public partial class Form2 : Form
     {
         String NName;
-        public Form2(string name)
+        public Form2()
         {
             InitializeComponent();
-            NName = name;
+            
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
             // Define the new size for label2
-            int newWidth = label2.Width + 50; // Change 50 to your desired width increase
-            int newHeight = label2.Height + 20; // Change 20 to your desired height increase
-
-            // Set the new size for label2
-            label2.Size = new Size(newWidth, newHeight);
-
-            label2.Text = NName;
+            
         }
 
 

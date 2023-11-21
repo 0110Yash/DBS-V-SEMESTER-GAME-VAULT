@@ -28,7 +28,7 @@ namespace WindowsFormsApp5
         OracleConnection conn;
         public Form3(string useridd)
         {
-            userid = useridd;
+          
             InitializeComponent();
              
         }
@@ -63,6 +63,7 @@ namespace WindowsFormsApp5
             publisher = textBox4.Text;
             Genreid = textBox5.Text;
             platform = textBox6.Text;
+            userid  = textBox8.Text;
 
             ConnectDB(); // Connect to the Oracle database
            
@@ -107,6 +108,18 @@ namespace WindowsFormsApp5
         }
 
         private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form f2 = new Form2();
+            f2.Show();
+            this.Hide();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }

@@ -87,7 +87,7 @@ namespace WindowsFormsApp5
 
                 if(c==1)
                 {
-                    Form f2 = new Form2(Username);
+                    Form f2 = new Form2();
                     
                     f2.Show();
                     this.Hide();
