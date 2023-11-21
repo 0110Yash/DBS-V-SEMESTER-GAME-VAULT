@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp5
 {
-    partial class Form12
+    partial class Form15
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.serviceController1 = new System.ServiceProcess.ServiceController();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -41,15 +40,15 @@
             this.dataGridView1.Size = new System.Drawing.Size(776, 426);
             this.dataGridView1.TabIndex = 0;
             // 
-            // Form12
+            // Form15
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 450);
+            this.ClientSize = new System.Drawing.Size(810, 444);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form12";
-            this.Text = "Form12";
-            this.Load += new System.EventHandler(this.Form12_Load);
+            this.Name = "Form15";
+            this.Text = "Form15";
+            this.Load += new System.EventHandler(this.Form15_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -57,7 +56,6 @@
 
         #endregion
 
-        private System.ServiceProcess.ServiceController serviceController1;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

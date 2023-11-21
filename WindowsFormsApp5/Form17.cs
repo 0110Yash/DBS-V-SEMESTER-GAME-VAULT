@@ -8,12 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.DataAccess.Client;
+
+
 namespace WindowsFormsApp5
 {
-    public partial class Form11 : Form
+    public partial class Form17 : Form
     {
         OracleConnection conn;
 
+        public Form17()
+        {
+            InitializeComponent();
+        }
         public void ConnectDB()
         {
             conn = new OracleConnection("DATA SOURCE=orcl;USER ID=yyaa;PASSWORD=123");
@@ -28,38 +34,37 @@ namespace WindowsFormsApp5
                 // Handle the exception
             }
         }
-        public Form11()
-        {
-            InitializeComponent();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            string reviewId = textBox1.Text;
+            string gameid = textBox1.Text;
+            string userid = textBox2.Text;
+            string completionPer = textBox3.Text;
 
             ConnectDB(); // Connect to the Oracle database
 
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = conn;
 
-            // Set the command text to call the delete_review procedure
-            cmd.CommandText = "delete_review";
+            // Set the command text to call the add_status_entry procedure
+            cmd.CommandText = "add_status_entry";
 
             // Specify the command type as a stored procedure
             cmd.CommandType = CommandType.StoredProcedure;
 
-            // Add input parameter for the procedure
-            cmd.Parameters.Add("p_reviewid", OracleDbType.Varchar2).Value = reviewId;
+            // Add input parameters for the procedure
+            cmd.Parameters.Add("p_gameid", OracleDbType.Varchar2).Value = gameid;
+            cmd.Parameters.Add("p_userid", OracleDbType.Varchar2).Value = userid;
+            cmd.Parameters.Add("p_completion_per", OracleDbType.Varchar2).Value = completionPer;
 
             try
             {
                 // Execute the stored procedure
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Review deleted successfully.");
+                MessageBox.Show("Status entry added successfully.");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error deleting review: " + ex.Message);
+                MessageBox.Show("Error adding status entry: " + ex.Message);
             }
             finally
             {
@@ -68,10 +73,9 @@ namespace WindowsFormsApp5
             }
         }
 
-        private void Form11_Load(object sender, EventArgs e)
+        private void Form17_Load(object sender, EventArgs e)
         {
 
         }
     }
-    }
-
+}

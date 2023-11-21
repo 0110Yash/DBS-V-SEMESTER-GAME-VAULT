@@ -40,3 +40,9 @@ C:\Users\Asus\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\x64\Debug\Windo
 C:\Users\Asus\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\x64\Debug\WindowsFormsApp5.Form9.resources
 C:\Users\Asus\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\x64\Debug\WindowsFormsApp5.Form11.resources
 C:\Users\Asus\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\x64\Debug\WindowsFormsApp5.Form12.resources
+C:\Users\Asus\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\x64\Debug\WindowsFormsApp5.Form13.resources
+C:\Users\Asus\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\x64\Debug\WindowsFormsApp5.Form14.resources
+C:\Users\Asus\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\x64\Debug\WindowsFormsApp5.Form15.resources
+C:\Users\Asus\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\x64\Debug\WindowsFormsApp5.Form16.resources
+C:\Users\Asus\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\x64\Debug\WindowsFormsApp5.Form17.resources
+C:\Users\Asus\source\repos\WindowsFormsApp5\WindowsFormsApp5\obj\x64\Debug\WindowsFormsApp5.Form18.resources

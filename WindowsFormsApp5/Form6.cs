@@ -79,6 +79,13 @@ namespace WindowsFormsApp5
 
             conn.Close();
 
+            Form f1 = new Form1();
+            f1.Show();
+            this.Hide();
+        }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
             
         }
     }

@@ -73,5 +73,19 @@ namespace WindowsFormsApp5
             f9.Show();
             this.Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form f13 = new Form13();
+            f13.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form f16 = new Form16();
+            f16.Show();
+            this.Hide();
+        }
     }
 }
